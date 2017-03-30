@@ -1,0 +1,25 @@
+/* Base Styling*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url('../images/one-bg2.JPG');
+	position: absolute;
+	padding: 6px;
+}
+
+h3#step {
+	font-family: 'Francois One', sans-serif;
+	display: inline;
+	position: relative;
+	top: -7px;
+}
+
+
+
+/* Styles for screen size less than 767px */
+
+@media (max-width: 767px) {
+
+	body {
+	}
+}
