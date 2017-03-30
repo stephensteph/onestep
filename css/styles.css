@@ -1,8 +1,8 @@
-/* Base Styling*/
+/* Base Styling */
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-image: url('../images/one-bg2.jpg');
+	background-image: url('../images/one-bg3-normal.jpg');
 	position: absolute;
 	padding: 6px;
 }
@@ -16,8 +16,10 @@ h3#step {
 
 
 
-/* Styles for screen size less than 767px */
+/* Styles for screen size less than 768px */
 
-@media (max-width: 767px) {
-
+@media (min-height: 663px) {
+	body {
+		background-image: url('../images/one-bg3.jpg');
+	}
 }
