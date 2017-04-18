@@ -1,25 +1,182 @@
 /* Base Styling */
 
-body {
-	font-family: 'Roboto', sans-serif;
-	background-image: url('../images/one-bg3-normal.jpg');
-	position: absolute;
-	padding: 6px;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+body#index {
+	font-family: 'Roboto', sans-serif;
+	background-color: black;
+	color: white;
+}
+
+#wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+#frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+#gallery_text {
+	text-align: center;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+div.slideText {
+	text-align: center;
+}
+
+.slideText h2 {
+	font-size: 40px;
+}
+
+div#enter {
+	text-align: center;
+	border: 1px solid white;
+	margin-top: 50px;
+	margin-left: 80px;
+	margin-right: 80px;
+	cursor: pointer;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+div#enter h4 {
+	letter-spacing: 1px;
+}
+
+
+body.mainpage {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
 
 h3#step {
 	font-family: 'Francois One', sans-serif;
 	display: inline;
 	position: relative;
-	top: -7px;
+	top: -9px;
+	font-size: 25px;
+}
+
+/* Style for the video background */
+
+
+video#video_bg1 {
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+}
+
+/* Ends */
+
+div#toggle {
+	cursor: pointer;
+	position: absolute;
+	right: 40px;
+	top: 20px;
+}
+
+div#toggle_remove {
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	display: none;
+}
+
+div#elements p {
+	display: inline;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding-right: 7px;
+	cursor: pointer;
+}
+
+div#elements {
+	display: inline;
+	position: absolute;
+	right: 145px;
+	top: 28px;
+	z-index: 2;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	transition: 0.4s;
+}
+
+h2#intro-statement {
+	position: absolute;
+	top: 300px;
+	left: 400px;
+	letter-spacing: 2px;
+	font-size: 25px;
+	font-family: cursive;
+	color: black;
+}
+
+div#services {
+	position: absolute;
+	top: 720px;
+	background-color: white;
+	width: 100%;
+}
+
+div.services-items {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+div#services h2 {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	letter-spacing: 1px;
+	font-size: 30px;
+}
+
+div.brand {
+	padding: 5% 20px;
+	width: calc(25% - 0px);
+	align-items: center;
+	text-align: center;
+	border-right: 1px solid #eaeaea;
+	border-top: 1px solid #eaeaea;
+}
+
+div p.branding {
+	font-size: 25px;
+	margin-top: 7px;
+	margin-bottom: 15px;
 }
 
 
+/* Styles for screen size of height higher than 933px */
 
-/* Styles for screen size less than 768px */
-
-@media (min-height: 663px) {
-	body {
-		background-image: url('../images/one-bg3.jpg');
-	}
+@media (max-width: 767px) {
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+

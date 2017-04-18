@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onestep</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+	<script src="../javascript/script.js"></script>
+</head>
+<body class="mainpage">
+	<div>
+		<video id="video_bg1" autoplay muted loop>
+			<source src="../videos/main_vid.mp4" type="video/mp4">
+		</video>
+		<div id="toggle" onclick="openNav()">
+			<svg height="28" width="40">
+				<line x1="0" y1="5" x2="36" y2="5" style="stroke: white; stroke-width: 4px;" />
+				<line x1="0" y1="15" x2="36" y2="15" style="stroke: white; stroke-width: 4px;" />
+				<line x1="0" y1="25" x2="36" y2="25" style="stroke: white; stroke-width: 4px;" />		
+			</svg>
+		</div>
+
+		<div id="toggle_remove" onclick="removeNav()">
+			<svg height=28 width="40">
+				<line x1="0" y1="1" x2="36" y2="27" style="stroke: white; stroke-width: 5px;" />
+				<line x1="36" y1="1" x2="0" y2="27" style="stroke: white; stroke-width: 5px;" />
+			</svg>
+		</div>
+		<div id="elements">
+			<p><a href="services.html">SERVICES</a></p>
+			<p>PORTFOLIO</p>
+			<P>PROJECTS</P>
+			<P>CONTACT</P>
+		</div>
+
+		<h2 id="intro-statement">
+			We are not just a company who <br> creates website templates and sells already <br> 
+			made solutions. We are a Full-stack Web Agency <br> providing All-in-one digital concepts <br>
+			for our clients.
+		</h2>
+	</div>
+	<div id="services">
+		<h2>SERVICES</h2>
+		<div class="services-items">
+			<div class="brand">
+				<img src="../images/brand.png" alt="brand" width="150">
+				<p class="branding">BRAND</p>
+				<p>Brand Strategy & Positioning </p>
+			</div>
+			<div id="experience" class="brand">
+				<img src="../images/hand.png" alt="hand" width="150">
+				<p class="branding">EXPERIENCE DESIGN</p>
+				<p>Omnichannel Journeys and Digital Ecosystems </p>
+			</div>
+			<div id="product" class="brand">
+				<img src="../images/bulb.png" alt="bulb" width="150">
+				<p class="branding">PRODUCT INNOVATION</p>
+				<p>Innovation and Experimentation</p>
+			</div>
+			<div id="campaigns" class="brand">
+				<img src="../images/campaign.png" alt="campaign" width="150">
+				<p class="branding">CAMPAIGNS</p>
+				<p>Campaign Concept, Planning & Management</p>
+			</div>
+			<div id="social" class="brand">
+				<img src="../images/social.png" alt="social" width="150">
+				<p class="branding">SOCIAL</p>
+				<p>Social Strategy, Content Development & Management</p>
+			</div>
+			<div id="digital" class="brand">
+				<img src="../images/digital.png" alt="digital" width="150">
+				<p class="branding">DIGITAL ADVERTISING</p>
+				<p>Digital Ad Strategy, Creative Development & Production</p>
+			</div>
+			<div id="content" class="brand">
+				<img src="../images/content.png" alt="content" width="150">
+				<p class="branding">CONTENT</p>
+				<p>Planning, Production & Editing</p>
+			</div>
+			<div id="red_games" class="brand">
+				<img src="../images/white_game.png" alt="white_game" width="150">
+				<p class="branding">WHITE GAMES</p>
+				<P>Mobile Game Strategy, Creative & Development</P>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
