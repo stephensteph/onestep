@@ -10,4 +10,5 @@ $(document).ready(function () {
 	// }
 
 	// setTimeout(GallerySlide, 2000);
+	}
 });

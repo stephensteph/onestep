@@ -1,8 +1,6 @@
 /* Base Styling */
 
 *{
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -10,6 +8,12 @@ body#index {
 	font-family: 'Roboto', sans-serif;
 	background-color: black;
 	color: white;
+	overflow-x: hidden;
+}
+
+body.mainpage {
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
 }
 
 #wrapper {
@@ -53,8 +57,9 @@ div#enter {
 	margin-top: 50px;
 }
 
-body.mainpage {
-	font-family: 'Roboto', sans-serif;
+#enter h4 {
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -90,11 +95,17 @@ video#video_bg2 {
 
 /* Ends */
 
+.top_container {
+	overflow: hidden;
+	height: 300px;
+	background-color: black;
+}
+
 /* Slide Images */
 
 img.slide_img {
 	width: 100%;
-	height: 100%;
+	height: 300px;
 }
 
 /* Slideshow container */
@@ -104,93 +115,53 @@ img.slide_img {
 	margin: auto;
 }
 
+/* Intro Statement on mainpage */
+
+.intro-statement {
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: cursive;
+	background-color: black;
+	color: white;
+	padding: 50px;
+}
+
 .my_slides {
 	display: none;
 }
 
-/* Fading animation */
+/* Moving animation */
 
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.move {	
+	position: relative;
+  	-webkit-animation: mymove 4s infinite;
+  	-webkit-animation-delay: 2s;
+  	animation: mymove 4s infinite;
+  	animation-delay: 2s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+@-webkit-keyframes mymove {
+  	from {left: 0%;}
+  	to {left: 100%;}
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+@keyframes mymove {
+  	from {left: 0%;} 
+  	to {left: 100%;}
 }
 
-
-
-div#toggle {
-	cursor: pointer;
-	position: absolute;
-	right: 40px;
-	top: 20px;
-}
-
-div#toggle_remove {
-	cursor: pointer;
-	position: absolute;
-	top: 20px;
-	right: 40px;
-	display: none;
-}
-
-div#elements p {
-	display: inline;
-	color: white;
-	font-weight: bold;
-	letter-spacing: 1px;
-	padding-right: 7px;
-	cursor: pointer;
-}
-
-div#elements {
-	display: inline;
-	position: absolute;
-	right: 145px;
-	top: 28px;
-	z-index: 2;
-	overflow: hidden;
-	width: 0;
-	height: 0;
-	transition: 0.4s;
-}
-
-/* Intro Statement on mainpage */
-
-#intro-statement {
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-	letter-spacing: 2px;
-	font-family: cursive;
-	color: white;
-}
-
-div#services {
+#services_main {
 	background-color: white;
 	width: 100%;
 }
 
-div.services-items {
+.services-items {
 	display: flex;
 	flex-wrap: wrap;
 	box-sizing: border-box;
 }
 
-div#services h2 {
+#services_main h2 {
 	text-align: center;
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -198,7 +169,7 @@ div#services h2 {
 	font-size: 30px;
 }
 
-div.brand {
+.brand {
 	padding: 5% 20px;
 	width: calc(25% - 0px);
 	align-items: center;
@@ -207,19 +178,11 @@ div.brand {
 	border-top: 1px solid #eaeaea;
 }
 
-div p.branding {
+p.branding {
 	font-size: 25px;
 	margin-top: 7px;
 	margin-bottom: 15px;
 }
 
-
-/* Styles for screen size of height higher than 933px */
-
-@media (max-width: 767px) {
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-}
 
 

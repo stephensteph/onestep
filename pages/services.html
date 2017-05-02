@@ -9,60 +9,74 @@
 	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/styles_2.css">
 	<script src="../javascript/script.js"></script>
 </head>
 <body class="mainpage">
-	<div id="elements">
-		<p>SERVICES</p>
-		<p>PORTFOLIO</p>
-		<P>PROJECTS</P>
-		<P>CONTACT</P>
-	</div>
-
-	<div id="services" style="top: 0;">
-		<h2>SERVICES</h2>
-		<div class="services-items">
-			<div class="brand">
-				<img src="../images/brand.png" alt="brand" width="150">
-				<p class="branding">BRAND</p>
-				<p>Brand Strategy & Positioning </p>
-			</div>
-			<div id="experience" class="brand">
-				<img src="../images/hand.png" alt="hand" width="150">
-				<p class="branding">EXPERIENCE DESIGN</p>
-				<p>Omnichannel Journeys and Digital Ecosystems </p>
-			</div>
-			<div id="product" class="brand">
-				<img src="../images/bulb.png" alt="bulb" width="150">
-				<p class="branding">PRODUCT INNOVATION</p>
-				<p>Innovation and Experimentation</p>
-			</div>
-			<div id="campaigns" class="brand">
-				<img src="../images/campaign.png" alt="campaign" width="150">
-				<p class="branding">CAMPAIGNS</p>
-				<p>Campaign Concept, Planning & Management</p>
-			</div>
-			<div id="social" class="brand">
-				<img src="../images/social.png" alt="social" width="150">
-				<p class="branding">SOCIAL</p>
-				<p>Social Strategy, Content Development & Management</p>
-			</div>
-			<div id="digital" class="brand">
-				<img src="../images/digital.png" alt="digital" width="150">
-				<p class="branding">DIGITAL ADVERTISING</p>
-				<p>Digital Ad Strategy, Creative Development & Production</p>
-			</div>
-			<div id="content" class="brand">
-				<img src="../images/content.png" alt="content" width="150">
-				<p class="branding">CONTENT</p>
-				<p>Planning, Production & Editing</p>
-			</div>
-			<div id="red_games" class="brand">
-				<img src="../images/white_game.png" alt="white_game" width="150">
-				<p class="branding">WHITE GAMES</p>
-				<P>Mobile Game Strategy, Creative & Development</P>
-			</div>
+	<nav class="topNav">
+		<h2><a href="../index.html">ONESTEP</a></h2>
+		<div id="toggle" onclick="openNav()">
+			<svg height="28" width="40">
+				<line x1="0" y1="5" x2="36" y2="5" style="stroke: black; stroke-width: 4px;" />
+				<line x1="0" y1="15" x2="36" y2="15" style="stroke: black; stroke-width: 4px;" />
+				<line x1="0" y1="25" x2="36" y2="25" style="stroke: black; stroke-width: 4px;" />		
+			</svg>
 		</div>
+
+		<div id="toggle_remove" onclick="removeNav()">
+			<svg height=28 width="40">
+				<line x1="0" y1="1" x2="36" y2="27" style="stroke: black; stroke-width: 4px;" />
+				<line x1="36" y1="1" x2="0" y2="27" style="stroke: black; stroke-width: 4px;" />
+			</svg>
+		</div>
+		<div id="elements">
+			<p><a href="services.html">SERVICES</a></p>
+			<p>PORTFOLIO</p>
+			<P>PROJECTS</P>
+			<P>CONTACT</P>
+		</div>
+	</nav>
+	<div id="services">
+		<h2>SERVICES</h2>
+		<section class="box">
+			<span class="align-left">
+				<img src="../images/front-end.jpg">
+			</span>
+			<div class="text-box">
+				<h1>Front end Development</h1>
+				<p>Responsive development is a standard for all our websites,
+				 delivering pixel-perfect digital developments for our clients.</p>
+			</div>
+		</section>
+		<section class="box wide">
+			<span class="align-right">
+				<img src="../images/cms-custom.jpg">
+			</span>
+			<div class="text-box">
+				<h1>CMS customization</h1>
+				<p>We are experts in WordPress, Magento, Drupal and Shopify. We develop,
+				 integrate and migrate your eCommerce project or build a customised CMS from scratch.</p>				
+			</div>
+		</section>
+		<section class="box wide-left">
+			<span class="align-left">
+				<img src="../images/php-development.jpg">
+			</span>
+			<div class="text-box">
+				<h1>Bespoke Python development</h1>
+				<p>We provide software development services to develop back-office systems for your specific needs using Laravel, Symfony,
+				 Yii Python frameworks. We always use an agile approach so we can deliver the best results.</p>			
+			</div>
+		</section>
+		<section class="box wide-right">
+			<span class="align-right">
+				<img src="../images/javascript-ui.jpg">
+			</span>
+			<div class="text-box">
+				<h1>JavaScript UI development</h1>
+				<p>We can build cutting edge web applications with rich UI using AngularJS, React and jQuery libraries.</p>
+			</div>
+		</section>
 	</div>
 </body>
 </html>
