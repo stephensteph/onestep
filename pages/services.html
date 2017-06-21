@@ -10,35 +10,49 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="../css/styles_2.css">
+	<link rel="stylesheet" href="../css/style-lg.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="http:slick/slick.min.js"></script>
+	
 	<script src="../javascript/script.js"></script>
+	<script src="../javascript/jq-script.js"></script>
 </head>
 <body class="mainpage">
+	<div class="main_menu" id="menu">
+		<div class="vertical_container">
+			<div class="vertical_content">
+				<ul style="list-style: none;">
+					<li><a href="services.html">services</a></li>
+					<li><a href="#">portfolio</a></li>
+					<li><a href="#">projects</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</div>
+			<div id="toggle_remove">
+				<svg height=28 width="40">
+					<line x1="0" y1="1" x2="36" y2="27" style="stroke: white; stroke-width: 4px;" />
+					<line x1="36" y1="1" x2="0" y2="27" style="stroke: white; stroke-width: 4px;" />
+				</svg>
+			</div>
+		</div>
+	</div>
 	<nav class="topNav">
 		<h2><a href="../index.html">ONESTEP</a></h2>
-		<div id="toggle" onclick="openNav()">
+		<div id="toggle">
 			<svg height="28" width="40">
 				<line x1="0" y1="5" x2="36" y2="5" style="stroke: black; stroke-width: 4px;" />
 				<line x1="0" y1="15" x2="36" y2="15" style="stroke: black; stroke-width: 4px;" />
 				<line x1="0" y1="25" x2="36" y2="25" style="stroke: black; stroke-width: 4px;" />		
 			</svg>
 		</div>
-
-		<div id="toggle_remove" onclick="removeNav()">
-			<svg height=28 width="40">
-				<line x1="0" y1="1" x2="36" y2="27" style="stroke: black; stroke-width: 4px;" />
-				<line x1="36" y1="1" x2="0" y2="27" style="stroke: black; stroke-width: 4px;" />
-			</svg>
-		</div>
-		<div id="elements">
-			<p><a href="services.html">SERVICES</a></p>
-			<p>PORTFOLIO</p>
-			<P>PROJECTS</P>
-			<P>CONTACT</P>
-		</div>
 	</nav>
-	<div id="services">
+	<div id="services" class="full_container">
 		<h2>SERVICES</h2>
-		<section class="box">
+		<section class="box box-right box-right1">
 			<span class="align-left">
 				<img src="../images/front-end.jpg">
 			</span>
@@ -48,9 +62,9 @@
 				 delivering pixel-perfect digital developments for our clients.</p>
 			</div>
 		</section>
-		<section class="box wide">
+		<section class="box box-left">
 			<span class="align-right">
-				<img src="../images/cms-custom.jpg">
+				<img src="../images/cms-custom.jpg" width="600">
 			</span>
 			<div class="text-box">
 				<h1>CMS customization</h1>
@@ -58,9 +72,9 @@
 				 integrate and migrate your eCommerce project or build a customised CMS from scratch.</p>				
 			</div>
 		</section>
-		<section class="box wide-left">
+		<section class="box box-right box-right2">
 			<span class="align-left">
-				<img src="../images/php-development.jpg">
+				<img src="../images/php-development.jpg" width="600">
 			</span>
 			<div class="text-box">
 				<h1>Bespoke Python development</h1>
@@ -68,9 +82,9 @@
 				 Yii Python frameworks. We always use an agile approach so we can deliver the best results.</p>			
 			</div>
 		</section>
-		<section class="box wide-right">
+		<section class="box box-left">
 			<span class="align-right">
-				<img src="../images/javascript-ui.jpg">
+				<img src="../images/javascript-ui.jpg" width="600">
 			</span>
 			<div class="text-box">
 				<h1>JavaScript UI development</h1>

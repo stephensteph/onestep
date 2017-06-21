@@ -2,6 +2,12 @@
 
 *{
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
 }
 
 body#index {
@@ -57,11 +63,6 @@ div#enter {
 	margin-top: 50px;
 }
 
-#enter h4 {
-	margin: 0;
-	padding: 0;
-}
-
 a {
 	text-decoration: none;
 	color: unset;
@@ -76,6 +77,49 @@ h3#step {
 	font-size: 25px;
 }
 
+#full_container {
+	width: 100%;
+	height: 100%;
+}
+
+.main_menu {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #1e2328;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 5;
+	font-size: 55px;
+}
+
+.vertical_container {
+	height: 100%;
+	width: 100%;
+}
+
+.main_menu .vertical_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.vertical_content ul li {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.vertical_content ul li>a {
+	color: white;
+}
+
 /* Style for the video background */
 
 
@@ -83,8 +127,6 @@ video#video_bg1 {
 	position: fixed;
 	min-width: 100%;
 	min-height: 100%;
-	width: auto;
-	height: auto;
 	z-index: -1;
 }
 
@@ -96,8 +138,8 @@ video#video_bg2 {
 /* Ends */
 
 .top_container {
-	overflow: hidden;
-	height: 300px;
+
+	height: 370px;
 	background-color: black;
 }
 
@@ -105,14 +147,29 @@ video#video_bg2 {
 
 img.slide_img {
 	width: 100%;
-	height: 300px;
+	height: 370px;
 }
 
+.slick-dots li.slick-active button:before {
+	opacity: 1;
+}
+
+.slick-dots li button:before {
+	font-size: 15px;
+	opacity: 1;
+	color: white;
+}
+
+.slick-dots {
+	bottom: 1px;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
 /* Slideshow container */
 
 .slideshow_container {
-	position: relative;
-	margin: auto;
 }
 
 /* Intro Statement on mainpage */
@@ -126,18 +183,18 @@ img.slide_img {
 	padding: 50px;
 }
 
-.my_slides {
-	display: none;
+.my_slides:hover {
+	opacity: .6;
 }
 
 /* Moving animation */
-
+/*
 .move {	
 	position: relative;
-  	-webkit-animation: mymove 4s infinite;
-  	-webkit-animation-delay: 2s;
-  	animation: mymove 4s infinite;
-  	animation-delay: 2s;
+  	-webkit-animation: mymove .2s infinite;
+  	-webkit-animation-delay: 6s;
+  	animation: mymove .2s infinite;
+  	animation-delay: 6s;
 }
 
 @-webkit-keyframes mymove {
@@ -149,13 +206,15 @@ img.slide_img {
   	from {left: 0%;} 
   	to {left: 100%;}
 }
-
+*/
 #services_main {
 	background-color: white;
 	width: 100%;
 }
 
 .services-items {
+	display: -webkit-flex; /* Safari */
+	-webkit-flex-wrap: wrap;
 	display: flex;
 	flex-wrap: wrap;
 	box-sizing: border-box;
@@ -172,7 +231,6 @@ img.slide_img {
 .brand {
 	padding: 5% 20px;
 	width: calc(25% - 0px);
-	align-items: center;
 	text-align: center;
 	border-right: 1px solid #eaeaea;
 	border-top: 1px solid #eaeaea;

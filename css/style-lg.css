@@ -1,0 +1,95 @@
+/* services page */
+
+@media (max-width: 1361px) {
+	.text-box {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 1358px) {
+	.box-right1 {
+		padding-right: 100px;
+		padding-left: 10px;
+	}
+}
+
+@media (max-width: 1341px) {
+	#services {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+	.box-right1 {
+		padding-left: 50px;
+		padding-right: 120px;
+	}
+}
+
+@media (max-width: 1249px) {
+	.box-right2 {
+		padding-left: 0px;
+	}
+}
+
+@media (max-width: 1233px) {
+	.text-box {
+		max-width: 430px;
+		font-size: 18px;
+		letter-spacing: 2px;
+		line-height: 25px;
+	}
+}
+
+@media (max-width: 1162px) {
+	.text-box {
+		max-width: 350px;
+	}
+}
+
+
+@media (max-width: 1090px) {
+	.text-box {
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 1038px) {
+	.text-box {
+		max-width: unset;
+		margin-bottom: 130px;
+	}
+}
+
+@media (max-width: 1038px) and (min-width: 768px) {
+	.box-right1 .text-box {
+		padding-left: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	.box {
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+	}
+
+	#services {
+		text-align: center;
+	}
+
+	.box img {
+		width: 100%;
+	}
+}
+
+
+
+/* mainpage */
+
+@media (max-width: 1199px) {
+	.topNav {
+		text-align: unset;
+	}
+}
+

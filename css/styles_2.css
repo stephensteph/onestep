@@ -1,5 +1,4 @@
-* {
-	box-sizing: border-box;
+*{
 }
 
 .topNav {
@@ -8,33 +7,14 @@
 	background-color: #f8f8f8;
   	border-color: #e7e7e7;
   	border: 1px solid transparent;
+  	padding-left: 15px;
   	text-align: center;
 }
 
 .topNav h2 {
+	position: relative;
 	margin-top: 8px;
 	display: inline-block;
-}
-
-#elements {
-	display: inline;
-	position: absolute;
-	top: 14px;
-	right: 80px;
-	z-index: 2;
-	overflow: hidden;
-	width: 0;
-	height: 0;
-	transition: 0.4s;
-}
-
-#elements p {
-	display: inline;
-	color: black;
-	font-weight: bold;
-	letter-spacing: 1px;
-	padding-right: 7px;
-	cursor: pointer;
 }
 
 #toggle, #toggle_remove {
@@ -45,14 +25,11 @@
 	margin-right: 15px;
 }
 
-#toggle_remove {
-	display: none;
-}
-
-div#services {
+#services {
 	background-color: white;
-	width: 100%;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 div#services h2 {
@@ -63,62 +40,38 @@ div#services h2 {
 }
 
 .box {
-	padding: 100px 15px 126px;
-	font-size: 26px;
-	max-width: 1102px;
-	margin: 0 auto;
+	padding: 100px 10px 0px 5px;
 }
 
-.box .align-left {
+.box-right {
+	padding: 100px 150px 0px 50px;
+}
+
+.text-box {
+	max-width: 500px;
 	float: left;
-	margin: 0 69px 0 0;
+	margin-top: 50px;
+	font-size: 24px;
+	letter-spacing: 1px;
 }
 
-.box .align-right {
+.box-right .text-box {
 	float: right;
 }
 
-.box .text-box {
-	max-width: 440px;
-	overflow: hidden;
-	padding: 92px 0 0;
-	letter-spacing: .5px;
+.box-left .text-box {
+	padding: 5px;
 }
 
-.box.wide {
+.box-right2 {
+	padding-right: 5px;
+	padding-left: 20px;
+}
+
+.box-left {
 	text-align: right;
 }
 
-.wide .align-right {
-	margin: 33px -83px 0 35px;
-	margin-right: 0;
+.text-box h1 {
+	padding-bottom: 8px;
 }
-
-.wide .text-box {
-	max-width: 458px;
-	margin-left: auto;
-	padding: 0;
-}
-
-.box.wide-right {
-	text-align: right;
-}
-
-.box.wide-left {
-	margin-top: 92px;
-}
-
-.wide-right .align-right {
-	margin: 7px 0 0 54px;
-}
-
-.wide-left .text-box {
-	max-width: 455px;
-	padding: 0;
-}
-
-.wide-right .text-box {
-	max-width: 447px;
-	margin-left: auto;
-}
-

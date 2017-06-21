@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+
+	video#video_bg1 {
+	}
+
+	.slideText h2 {
+		font-size: 28px;
+	}
+
+	.topNav h2 {
+		margin-top: unset;
+		position: absolute;
+		top: 8px;
+		left: 15px;
+	}
+
+	.intro-statement h2 {
+		font-size: 20px;
+	}
+
+	.brand {
+		width: calc(50% - 0px);
+	}
+
+
+
+}
