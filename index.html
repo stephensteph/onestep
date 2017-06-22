@@ -16,6 +16,7 @@
 		<video id="video_bg1" autoplay muted loop>
 			<source src="videos/index_vid.mp4" type="video/mp4">
 		</video>
+		<canvas class="canvas"></canvas>
 		<img id="one" src="images/onestep.png" width="40" alt="onestep">
 		<h3 id="step">STEP</h3>
 		<div id="frame">
@@ -28,6 +29,30 @@
 			</div>
 		</div>
 	</div>
-	
+
+<script>
+
+var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+if (isIOS) {
+
+    var canvasVideo = new CanvasVideoPlayer({
+        videoSelector: '.video',
+        canvasSelector: '.canvas',
+        timelineSelector: false,
+        autoplay: true,
+        makeLoop: true,
+        pauseOnClick: false,
+        audio: false
+    });
+
+} else {
+
+    // Use HTML5 video
+    document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+}   
+
+</script>
 </body>
 </html>`
