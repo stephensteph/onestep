@@ -5,6 +5,8 @@ $(document).ready(function(){
   		dots: true,
   		autoplay: true,
   		draggable: false,
+  		mobileFirst: true,
+  		swipe: false,
   });
 
   var icons = $('#menu li');
