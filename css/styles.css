@@ -11,10 +11,8 @@ body {
 }
 
 body#index {
-	background-image: url(../videos/index_gif2.gif);
+	background-image: url(../videos/index_gif3.gif);
 	background-size: cover;
-	height: 100%;
-	width: 100%;	
 	font-family: 'Roboto', sans-serif;
 	background-color: black;
 	color: white;
@@ -26,11 +24,11 @@ body.mainpage {
 	overflow-x: hidden;
 }
 
-#wrapper {
+/*#wrapper {
 	height: 100%;
 	width: 100%;
 }
-
+*/
 #frame {
 	position: absolute;
 	top: 50%;
@@ -133,13 +131,17 @@ h3#step {
 	min-height: 100%;
 	z-index: -1;
 }
-*/
+
 video#video_bg2 {
 	width: 100%;
 	height: 100%;
 }
-
+*/
 /* Ends */
+
+#gif_bg2 {
+	width: 100%;
+}
 
 .top_container {
 
