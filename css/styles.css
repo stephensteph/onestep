@@ -11,8 +11,9 @@ body {
 }
 
 body#index {
-	background-image: url(../videos/index_gif3.gif);
+	background-image: url(../videos/index_gif.gif);
 	background-size: cover;
+	background-attachment: fixed;
 	font-family: 'Roboto', sans-serif;
 	background-color: black;
 	color: white;
