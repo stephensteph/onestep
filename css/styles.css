@@ -25,11 +25,6 @@ body.mainpage {
 	overflow-x: hidden;
 }
 
-/*#wrapper {
-	height: 100%;
-	width: 100%;
-}
-*/
 #frame {
 	position: absolute;
 	top: 50%;
@@ -121,27 +116,6 @@ h3#step {
 
 .vertical_content ul li>a {
 	color: white;
-}
-
-/* Style for the video background */
-
-
-/*video#video_bg1 {
-	position: fixed;
-	min-width: 100%;
-	min-height: 100%;
-	z-index: -1;
-}
-
-video#video_bg2 {
-	width: 100%;
-	height: 100%;
-}
-*/
-/* Ends */
-
-#gif_bg2 {
-	width: 100%;
 }
 
 .top_container {
