@@ -7,13 +7,6 @@
 		font-size: 28px;
 	}
 
-	.topNav h2 {
-		margin-top: unset;
-		position: absolute;
-		top: 8px;
-		left: 15px;
-	}
-
 	.intro-statement h2 {
 		font-size: 20px;
 	}
@@ -22,6 +15,16 @@
 		width: calc(50% - 0px);
 	}
 
+	.main_menu {
+		font-size: 35px;
+	}
 
+}
+
+@media (max-width: 500px) {
+
+	.brand {
+		width: calc(100% - 0px);
+	}
 
 }

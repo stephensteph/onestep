@@ -25,6 +25,13 @@ body.mainpage {
 	overflow-x: hidden;
 }
 
+.logo_cover {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
 #frame {
 	position: absolute;
 	top: 50%;
